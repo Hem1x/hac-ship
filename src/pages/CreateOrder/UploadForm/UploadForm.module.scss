@@ -1,0 +1,21 @@
+.upload {
+  margin-block: 20px;
+  &__message {
+    background: #fff1d9;
+    padding: 12px 16px;
+    border-radius: 10px;
+    margin-block: 20px;
+  }
+
+  &__info {
+    &-title {
+      font-weight: 700;
+    }
+
+    &-list {
+      li {
+        margin-block: 10px;
+      }
+    }
+  }
+}

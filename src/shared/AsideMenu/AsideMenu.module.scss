@@ -1,0 +1,36 @@
+.nav-panel {
+  background: #fefdfd;
+  overflow-y: hidden;
+
+  &__menu {
+    position: relative;
+    height: 100%;
+    background-color: #fefdfd;
+
+    li {
+      display: flex !important;
+      align-items: center;
+    }
+  }
+
+  &__collapse-button {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+
+    font-size: 16px;
+  }
+}
+
+.nav-panel__logo {
+  width: 80%;
+  margin: 0 auto;
+  padding-inline: 40px;
+  margin: 40px 0;
+
+  &-collapsed {
+    @extend .nav-panel__logo;
+    padding-inline: 20px;
+    width: 100%;
+  }
+}

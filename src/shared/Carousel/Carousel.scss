@@ -1,0 +1,41 @@
+.carousel {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+
+  &__btn {
+    color: rgb(80, 80, 246);
+    background: transparent;
+    border: none;
+
+    &:hover {
+      cursor: pointer;
+      color: lighten($color: rgb(80, 80, 246), $amount: 20%);
+    }
+  }
+}
+
+.carousel-container {
+  overflow: hidden;
+  width: 100%;
+  height: 200px;
+  position: relative;
+}
+
+.carousel-item {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.slide-enter {
+  opacity: 1;
+  transition: all 0.2s ease-in-out;
+}
+
+.slide-exit {
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}

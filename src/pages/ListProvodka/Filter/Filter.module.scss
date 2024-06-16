@@ -1,0 +1,14 @@
+.filter {
+  background: white;
+  min-width: 350px;
+  flex: 1;
+
+  &-button {
+    width: 100%;
+    height: 40px;
+
+    &.reset {
+      background: #ececec;
+    }
+  }
+}

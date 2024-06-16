@@ -1,0 +1,130 @@
+hr {
+  margin-block: 2rem;
+}
+
+.container {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.content {
+  width: auto;
+  height: 100vh;
+  padding: 2rem;
+  background-color: white;
+  overflow: auto;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+
+  &__logo {
+    width: 2rem;
+  }
+
+  &__title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    opacity: 0.5;
+  }
+}
+
+.ship {
+  &-info {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    margin-bottom: 1.25rem;
+
+    &__icon {
+      width: 2.25rem;
+    }
+
+    &__name {
+      font-weight: 600;
+      font-size: 1.25rem;
+    }
+
+    &__params {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      p {
+        .ship-info__param {
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+
+.route {
+  &-header {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    margin-bottom: 1.25rem;
+
+    &__title {
+      font-weight: 600;
+      font-size: 1.25rem;
+    }
+  }
+
+  .section {
+    margin-bottom: 1.25rem;
+
+    &__label {
+      opacity: 0.5;
+      margin-bottom: 10px;
+    }
+
+    &__detail {
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  .bold {
+    font-weight: bold;
+  }
+}
+
+.route-time {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1.5rem;
+  margin-bottom: 2.5rem;
+
+  &__title {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+
+  &__time {
+    font-size: 2.125rem;
+  }
+}
+
+.close-button {
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding: 0.75rem 1rem;
+  font-weight: 600;
+  font-size: 0.875rem;
+  border-radius: 0.75rem;
+  transition: all 150ms ease-in-out;
+
+  &:hover {
+    cursor: pointer;
+    background-color: #3b82f6;
+  }
+}

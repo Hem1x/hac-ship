@@ -1,0 +1,21 @@
+.provodka {
+  position: relative;
+}
+
+.switcher {
+  width: fit-content;
+  display: flex;
+  background: #ccc;
+  border-radius: 9999px;
+  cursor: pointer;
+
+  &__item {
+    border-radius: 9999px;
+    padding: 15px 24px;
+
+    &.selected {
+      background: black;
+      color: white;
+    }
+  }
+}

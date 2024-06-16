@@ -1,0 +1,33 @@
+.container {
+  flex: 1;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  padding: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+
+  &__active {
+    @extend .container;
+    border: 1px solid #1677ff;
+    transform: translateY(-5px);
+  }
+
+  .title {
+    color: black;
+    margin-bottom: 10px;
+
+    &__active {
+      @extend .title;
+      color: #1677ff;
+    }
+  }
+
+  .text {
+    color: #7e7e7e;
+
+    &__active {
+      @extend .text;
+      color: #1677ff;
+    }
+  }
+}
